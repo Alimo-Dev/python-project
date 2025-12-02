@@ -22,7 +22,8 @@ Password = ''
 FullNames = ['Ali Mohammadi']
 Emails = ['alimohammadi.dev@gmail.com']
 Usernames = ['alimo_dev']
-Passwords = ['@123']
+Keys = ['@@@']
+Passwords = ['@12345']
 
 while LoopStatus:
     if Section == 0:
@@ -119,5 +120,16 @@ while LoopStatus:
         else:
            print('Input Invalid!')
     elif Section == 1:
+        OprationInput = 0
         ClassMenu.menu.Profile('self')
         OprationInput = int(input('Enter an option: '))
+
+
+
+        if OprationInput == 1:
+            print(FullNames[index])
+            print(Emails[index])
+            print(Usernames[index])
+            print('*' * len(Passwords[index]))
+
+

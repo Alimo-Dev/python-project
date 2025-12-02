@@ -3,6 +3,7 @@ import ClassTool
 
 LoopStatus = True
 RegisterLoopStatus = True
+ShowProfileLoopStatus = True
 LoginLoopStatus = True
 LoginStatus = True
 
@@ -132,4 +133,9 @@ while LoopStatus:
             print(Usernames[index])
             print('*' * len(Passwords[index]))
 
+            print()
+
+            while ShowProfileLoopStatus:
+                ClassMenu.menu.ShowProfile('self')
+                OprationInput = int(input('Enter an option: '))
 

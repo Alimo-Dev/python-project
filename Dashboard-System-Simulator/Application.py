@@ -87,7 +87,13 @@ while LoopStatus:
                         Usernames.append(Username)
                         Passwords.append(Password)
 
+                        index=Usernames.index(Username)
+
                         OprationStatus = False
+
+                        Section = 1
+
+                        break
                     else:
                         print('Error')
 
@@ -109,7 +115,7 @@ while LoopStatus:
 
 
         elif OprationInput == 3:
-            print('test')
+            LoopStatus = False
         else:
            print('Input Invalid!')
     elif Section == 1:
